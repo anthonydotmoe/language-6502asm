@@ -1,0 +1,47 @@
+'scopeName': 'source.assembly.6502.asm6'
+'fileTypes': [
+  'asm'
+]
+'name': '6502 Assembly (asm6)'
+'patterns': [
+  {
+    'match': ';.*\\n?'
+    'name': 'comment.line.semicolon'
+  }
+  {
+    'match': '\\b(adc|and|asl|bit|clc|cld|cli|clv|cmp|cpx|cpy|dec|dex|dey|eor|inc|inx|iny|lda|ldx|ldy|lsr|nop|ora|pha|php|pla|plp|rol|ror|sbc|sec|sed|sei|sta|stx|sty|tax|txa|tay|tya|tsx|txs)\\b'
+    'name': 'keyword'
+  }
+  {
+    'match': '\\b(bcc|bcs|beq|bmi|bne|bpl|brk|bvc|bvs|jmp|jsr|rti|rts)\\b'
+    'name': 'keyword.control'
+  }
+  {
+    'match': '\\.?(DB|DW|BYTE|WORD|DCB|DCW|DC\\.B|DC\\.W|DSB|DSW|DS\\.B|DS\\.W|DL|DH|HEX)\\b'
+    'name': 'storage.type'
+  }
+  {
+    'match': '\\.?(BASE|ALIGN|PAD|FILLVALUE|ORG)\\b'
+    'name': 'storage.modifier'
+  }
+  {
+    'match': '\\.?(EQU|=|INCLUDE|INCSRC|INCBIN|BIN|IF|ELSEIF|ELSE|ENDIF)\\b'
+    'name': 'support.function'
+  }
+  {
+    'match': '\\.?(ERROR|ENUM|ENDE|REPT|ENDR|MACRO|ENDM|IFDEF|IFNDEF)\\b'
+    'name': 'constant.language'
+  }
+  {
+    'match': '#?\\$[0-9a-fA-F]+'
+    'name': 'constant.numeric.hex'
+  }
+  {
+    'match': '#?\\%[0-1]+'
+    'name': 'constant.numeric.binary'
+  }
+  {
+    'match': '{[0-9]+}'
+    'name': 'variable.parameter.macro'
+  }
+]
