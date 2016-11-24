@@ -1,0 +1,11 @@
+{
+  "name": "language-6502asm",
+  "version": "0.0.0",
+  "description": "Adds syntax highlighting to .asm 6502 assembly files in Atom, with extra support for asm6 preprocessors.",
+  "repository": "https://github.com/aguerrero810/language-6502asm",
+  "license": "MIT",
+  "engines": {
+    "atom": ">0.50.0"
+  },
+  "dependencies": {}
+}
